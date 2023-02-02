@@ -25,6 +25,7 @@ import { Animation, CubicEase, EasingFunction } from "@babylonjs/core/Animations
 // Camera
 import { FreeCameraKeyboardMoveInput } from "@babylonjs/core/Cameras/Inputs/freeCameraKeyboardMoveInput";
 import { FreeCamera } from "@babylonjs/core/Cameras/freeCamera";
+import { Camera } from "@babylonjs/core/Cameras/camera"
 
 // Misc
 import { Tools } from "@babylonjs/core/Misc/tools";
@@ -32,7 +33,7 @@ import { ScreenshotTools } from "@babylonjs/core/Misc/screenshotTools";
 import { SceneSerializer } from "@babylonjs/core/Misc/sceneSerializer";
 
 // Others
-import { Engine } from "@babylonjs/core/Engines";
+import { Engine } from "@babylonjs/core/Engines/engine";
 import { Database } from "@babylonjs/core/Offline/database";
 import { SceneLoader } from "@babylonjs/core/Loading/sceneLoader";
 import { GlowLayer } from "@babylonjs/core/Layers/glowLayer";
@@ -46,10 +47,11 @@ import { PositionGizmo } from "@babylonjs/core/Gizmos/positionGizmo";
 import { RotationGizmo } from "@babylonjs/core/Gizmos/rotationGizmo";
 import { GLTF2Export } from "@babylonjs/serializers/glTF/2.0/glTFSerializer";
 import { DefaultCollisionCoordinator } from "@babylonjs/core/Collisions/collisionCoordinator";
-
+import { BoundingInfo } from "@babylonjs/core/Culling/boundingInfo";
 
 import "@babylonjs/loaders/glTF";
-import "@babylonjs/core/Physics/physicsEngineComponent"
+import "@babylonjs/core/Physics/physicsEngineComponent";
+import "@babylonjs/core/Engines/thinEngine";
 
 const BABYLON: any = {   
   // Maths
@@ -85,6 +87,7 @@ const BABYLON: any = {
   FreeCameraKeyboardMoveInput,
   ArcRotateCamera,
   FreeCamera,
+  Camera,
 
   // Others
   Database,
@@ -102,7 +105,8 @@ const BABYLON: any = {
   SceneSerializer,
   DefaultCollisionCoordinator,
   EdgesRenderer,
-  ScreenshotTools
+  ScreenshotTools,
+  BoundingInfo
 }
 
 window['BABYLON'] =  BABYLON;

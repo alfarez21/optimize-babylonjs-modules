@@ -66,6 +66,7 @@ import { RotationGizmo } from "@babylonjs/core/Gizmos/rotationGizmo";
 import { EdgesRenderer } from "@babylonjs/core/Rendering/edgesRenderer";
 import { SpotLight } from "@babylonjs/core/Lights/spotLight";
 import { GLTF2Export } from "@babylonjs/serializers/glTF/2.0/glTFSerializer";
+import { RayHelper } from "@babylonjs/core/Debug/rayHelper";
 
 import "@babylonjs/loaders/glTF";
 
@@ -139,6 +140,7 @@ const BABYLON: any = {
     EdgesRenderer,
     SpotLight,
     Tools,
+    RayHelper,
     GLTF2Export,
     ScreenshotTools,
     SceneSerializer
