@@ -5,8 +5,7 @@ import { Space } from "@babylonjs/core/Maths/math.axis";
 import { Angle } from "@babylonjs/core/Maths/math.path";
 
 // Materials
-import { CubeTexture } from "@babylonjs/core/Materials/Textures/cubeTexture";
-import { Texture } from "@babylonjs/core/Materials/Textures/texture";
+import { CubeTexture, Texture } from "@babylonjs/core/Materials/Textures";
 import { StandardMaterial } from "@babylonjs/core/Materials/standardMaterial";
 
 // Meshes
@@ -33,7 +32,7 @@ import { ScreenshotTools } from "@babylonjs/core/Misc/screenshotTools";
 import { SceneSerializer } from "@babylonjs/core/Misc/sceneSerializer";
 
 // Others
-import { Engine } from "@babylonjs/core/Engines/engine";
+import { Engine } from "@babylonjs/core/Engines";
 import { Database } from "@babylonjs/core/Offline/database";
 import { SceneLoader } from "@babylonjs/core/Loading/sceneLoader";
 import { GlowLayer } from "@babylonjs/core/Layers/glowLayer";
