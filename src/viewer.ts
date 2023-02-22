@@ -5,7 +5,7 @@ import { Space } from "@babylonjs/core/Maths/math.axis";
 import { Angle } from "@babylonjs/core/Maths/math.path";
 
 // Materials
-import { CubeTexture, Texture } from "@babylonjs/core/Materials/Textures";
+import { CubeTexture, Texture, VideoTexture } from "@babylonjs/core/Materials/Textures";
 import { StandardMaterial } from "@babylonjs/core/Materials/standardMaterial";
 
 // Actions
@@ -46,6 +46,7 @@ import { DefaultCollisionCoordinator } from "@babylonjs/core/Collisions/collisio
 import { ArcRotateCamera } from "@babylonjs/core/Cameras/arcRotateCamera";
 import { RayHelper } from "@babylonjs/core/Debug/rayHelper";
 
+import "@babylonjs/core/Engines/Extensions/engine.externalTexture";
 import "@babylonjs/loaders/glTF";
 
 const BABYLON: any = {   
@@ -60,6 +61,7 @@ const BABYLON: any = {
     StandardMaterial,
     CubeTexture,
     Texture,
+    VideoTexture,
 
     // Actions
     ActionManager,
