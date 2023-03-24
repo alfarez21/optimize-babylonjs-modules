@@ -1,6 +1,6 @@
 // Math
 import { Color4, Color3 } from "@babylonjs/core/Maths/math.color";
-import { Vector3 } from "@babylonjs/core/Maths/math.vector";
+import { Vector3, Quaternion } from "@babylonjs/core/Maths/math.vector";
 import { Space } from "@babylonjs/core/Maths/math.axis";
 import { Angle } from "@babylonjs/core/Maths/math.path";
 
@@ -56,6 +56,7 @@ const BABYLON: any = {
     Vector3,
     Space,
     Angle,
+    Quaternion,
      
     // Materials
     StandardMaterial,
