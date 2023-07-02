@@ -5,7 +5,7 @@ import { Space } from "@babylonjs/core/Maths/math.axis";
 import { Angle } from "@babylonjs/core/Maths/math.path";
 
 // Materials
-import { CubeTexture, Texture } from "@babylonjs/core/Materials/Textures";
+import { CubeTexture, Texture, VideoTexture} from "@babylonjs/core/Materials/Textures";
 import { StandardMaterial } from "@babylonjs/core/Materials/standardMaterial";
 
 // Meshes
@@ -64,6 +64,7 @@ const BABYLON: any = {
   StandardMaterial,
   CubeTexture,
   Texture,
+  VideoTexture,
   
   // Meshes
   TransformNode,
