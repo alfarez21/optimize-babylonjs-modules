@@ -32,6 +32,8 @@ import { Animation, CubicEase, EasingFunction } from "@babylonjs/core/Animations
 // Camera
 import { FreeCameraKeyboardMoveInput } from "@babylonjs/core/Cameras/Inputs/freeCameraKeyboardMoveInput";
 import { FreeCamera } from "@babylonjs/core/Cameras/freeCamera";
+import { ArcRotateCamera } from "@babylonjs/core/Cameras/arcRotateCamera";
+import { ArcRotateCameraPointersInput } from "@babylonjs/core/Cameras/Inputs/arcRotateCameraPointersInput";
 
 // Others
 import { Engine } from "@babylonjs/core/Engines/engine";
@@ -43,8 +45,8 @@ import { Ray } from "@babylonjs/core/Culling/ray";
 import { HemisphericLight } from "@babylonjs/core/Lights/hemisphericLight";
 import { PointerEventTypes } from "@babylonjs/core/Events/pointerEvents";
 import { DefaultCollisionCoordinator } from "@babylonjs/core/Collisions/collisionCoordinator";
-import { ArcRotateCamera } from "@babylonjs/core/Cameras/arcRotateCamera";
 import { RayHelper } from "@babylonjs/core/Debug/rayHelper";
+import { Matrix } from "@babylonjs/core/Maths/math.vector";
 
 import "@babylonjs/core/Engines/Extensions/engine.externalTexture";
 import "@babylonjs/loaders/glTF";
@@ -57,6 +59,7 @@ const BABYLON: any = {
     Space,
     Angle,
     Quaternion,
+    Matrix,
      
     // Materials
     StandardMaterial,
@@ -92,6 +95,7 @@ const BABYLON: any = {
     // Camera
     FreeCameraKeyboardMoveInput,
     FreeCamera,
+    ArcRotateCameraPointersInput,
 
     // Others
     Database,

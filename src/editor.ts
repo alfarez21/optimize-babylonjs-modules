@@ -38,6 +38,7 @@ import { SceneLoader } from "@babylonjs/core/Loading/sceneLoader";
 import { GlowLayer } from "@babylonjs/core/Layers/glowLayer";
 import { Scene } from "@babylonjs/core/scene";
 import { EdgesRenderer } from "@babylonjs/core/Rendering/edgesRenderer";
+import { HighlightLayer } from "@babylonjs/core/Layers/highlightLayer";
 import { Ray } from "@babylonjs/core/Culling/ray";
 import { HemisphericLight } from "@babylonjs/core/Lights/hemisphericLight";
 import { PointerEventTypes } from "@babylonjs/core/Events/pointerEvents";
@@ -106,7 +107,8 @@ const BABYLON: any = {
   DefaultCollisionCoordinator,
   EdgesRenderer,
   ScreenshotTools,
-  BoundingInfo
+  BoundingInfo,
+  HighlightLayer
 }
 
 window['BABYLON'] =  BABYLON;
