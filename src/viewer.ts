@@ -47,6 +47,8 @@ import { PointerEventTypes } from "@babylonjs/core/Events/pointerEvents";
 import { DefaultCollisionCoordinator } from "@babylonjs/core/Collisions/collisionCoordinator";
 import { RayHelper } from "@babylonjs/core/Debug/rayHelper";
 import { Matrix } from "@babylonjs/core/Maths/math.vector";
+import { BoundingInfo } from "@babylonjs/core/Culling/boundingInfo";
+
 
 import "@babylonjs/core/Engines/Extensions/engine.externalTexture";
 import "@babylonjs/loaders/glTF";
@@ -109,6 +111,7 @@ const BABYLON: any = {
     GlowLayer,
     DefaultCollisionCoordinator,
     RayHelper,
+    BoundingInfo
 }
 
 window['BABYLON'] =  BABYLON;

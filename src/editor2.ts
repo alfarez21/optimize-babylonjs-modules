@@ -60,6 +60,8 @@ const BABYLON: any = {
   Vector3,
   Space,
   Angle,
+  Matrix,
+
     
   // Materials
   StandardMaterial,
