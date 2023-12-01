@@ -51,7 +51,8 @@ import {
   DirectionalLight,
   SpotLight,
   ShadowGenerator,
-  RayHelper
+  RayHelper,
+  SceneOptimizerOptions,
 } from "@babylonjs/core";
 
 import { AdvancedDynamicTexture, TextBlock } from "@babylonjs/gui";
@@ -122,6 +123,7 @@ const BABYLON: any = {
   BoundingInfo,
   HighlightLayer,
   ShadowGenerator,
+  SceneOptimizerOptions,
   CSG,
 }
 
