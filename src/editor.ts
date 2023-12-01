@@ -47,7 +47,11 @@ import {
   ScreenshotTools,
   BoundingInfo,
   HighlightLayer,
-  CSG
+  CSG,
+  DirectionalLight,
+  SpotLight,
+  ShadowGenerator,
+  RayHelper
 } from "@babylonjs/core";
 
 import { AdvancedDynamicTexture, TextBlock } from "@babylonjs/gui";
@@ -76,6 +80,11 @@ const BABYLON: any = {
   AbstractMesh,
   MeshBuilder,
 
+  // Lights
+  HemisphericLight,
+  DirectionalLight,
+  SpotLight,
+
   // GUI 2D
   GUI: {
     AdvancedDynamicTexture,
@@ -99,8 +108,8 @@ const BABYLON: any = {
   SceneLoader,
   Scene,
   Ray,
+  RayHelper,
   PointerEventTypes,
-  HemisphericLight,
   GlowLayer,
   PositionGizmo,
   RotationGizmo,
@@ -112,6 +121,7 @@ const BABYLON: any = {
   ScreenshotTools,
   BoundingInfo,
   HighlightLayer,
+  ShadowGenerator,
   CSG,
 }
 
