@@ -4,7 +4,7 @@ module.exports = {
     resolve: {
       extensions: [".ts", ".js"],
     },
-    entry: './src/editor.ts',
+    entry: './src/viewer.ts',
     output: {
       filename: 'babylonjs-optimized.js',
       path: path.resolve(__dirname, 'dist'),

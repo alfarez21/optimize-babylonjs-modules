@@ -44,6 +44,7 @@ import {
   SceneSerializer,
   DefaultCollisionCoordinator,
   EdgesRenderer,
+  PostProcessesOptimization,
   ScreenshotTools,
   BoundingInfo,
   HighlightLayer,
@@ -53,10 +54,15 @@ import {
   ShadowGenerator,
   RayHelper,
   SceneOptimizerOptions,
+  RenderTargetTexture,
+  ParticlesOptimization,
+  TextureOptimization,
+  SceneOptimizer
 } from "@babylonjs/core";
 
 import { AdvancedDynamicTexture, TextBlock } from "@babylonjs/gui";
 import { GLTF2Export } from "@babylonjs/serializers";
+import { ShadowOnlyMaterial } from "@babylonjs/materials";
 import "@babylonjs/loaders/glTF";
 
 const BABYLON: any = {   
@@ -68,12 +74,12 @@ const BABYLON: any = {
   Angle,
   Matrix,
 
-    
   // Materials
   StandardMaterial,
   CubeTexture,
   Texture,
   VideoTexture,
+  ShadowOnlyMaterial,
   
   // Meshes
   TransformNode,
@@ -125,6 +131,11 @@ const BABYLON: any = {
   ShadowGenerator,
   SceneOptimizerOptions,
   CSG,
+  RenderTargetTexture,
+  PostProcessesOptimization,
+  ParticlesOptimization,
+  TextureOptimization,
+  SceneOptimizer
 }
 
 window['BABYLON'] =  BABYLON;
