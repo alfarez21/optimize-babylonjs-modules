@@ -57,7 +57,8 @@ import {
   RenderTargetTexture,
   ParticlesOptimization,
   TextureOptimization,
-  SceneOptimizer
+  SceneOptimizer,
+  DracoCompression
 } from "@babylonjs/core";
 
 import { AdvancedDynamicTexture, TextBlock } from "@babylonjs/gui";
@@ -135,7 +136,8 @@ const BABYLON: any = {
   PostProcessesOptimization,
   ParticlesOptimization,
   TextureOptimization,
-  SceneOptimizer
+  SceneOptimizer,
+  DracoCompression
 }
 
 window['BABYLON'] =  BABYLON;
