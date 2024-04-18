@@ -56,7 +56,7 @@ import {
     ParticlesOptimization,
     TextureOptimization,
     SceneOptimizer,
-    DracoCompression
+    DracoCompression,
 } from "@babylonjs/core";
 
 // GUI 2D
@@ -70,7 +70,7 @@ import {
 } from "@babylonjs/gui";
 
 import "@babylonjs/loaders";
-import { ShadowOnlyMaterial } from "@babylonjs/materials";
+import { ShadowOnlyMaterial, PBRCustomMaterial } from "@babylonjs/materials";
 
 
 const BABYLON: any = {   
@@ -141,7 +141,8 @@ const BABYLON: any = {
     SceneOptimizer,
     SpotLight,
     ShadowGenerator,
-    DracoCompression
+    DracoCompression,
+    PBRCustomMaterial
 }
 
 window['BABYLON'] =  BABYLON;
